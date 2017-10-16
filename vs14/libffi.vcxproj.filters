@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\x86">
+      <UniqueIdentifier>{83380899-8343-407d-8a87-61831b07f5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\x64">
+      <UniqueIdentifier>{799be1d1-4b7e-4d4c-af9e-d782b7428ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\x64">
+      <UniqueIdentifier>{48f70ae5-4156-43be-a061-4a19e1e6171d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\x64\gen">
+      <UniqueIdentifier>{b9c8bfbd-a07e-4c57-97c6-fb2adbf4db6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\x86">
+      <UniqueIdentifier>{b1714491-e70b-48c2-83ff-451172e423df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\x86\gen">
+      <UniqueIdentifier>{f2fedb3b-2e98-42e3-8fb3-3d901681621d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\x86\ffitarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\ffi.h">
+      <Filter>Header Files\x64</Filter>
+    </ClInclude>
+    <ClInclude Include="x86\ffi.h">
+      <Filter>Header Files\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\fficonfig.h">
+      <Filter>Header Files\x64</Filter>
+    </ClInclude>
+    <ClInclude Include="x86\fficonfig.h">
+      <Filter>Header Files\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ffi_cfi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ffi_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\x86\asmnames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\closures.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\java_raw_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\prep_cif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raw_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\x86\ffi64.c">
+      <Filter>Source Files\x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\x86\ffiw64.c">
+      <Filter>Source Files\x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\x86\ffi.c">
+      <Filter>Source Files\x86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="x64\Debug\win64_intel.masm">
+      <Filter>Source Files\x64\gen</Filter>
+    </MASM>
+    <MASM Include="..\src\x86\sysv_intel.S">
+      <Filter>Source Files\x86</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\x86\win64_intel.S">
+      <Filter>Source Files\x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="x64\Debug\win64_intel.obj">
+      <Filter>Source Files\x64\gen</Filter>
+    </Object>
+  </ItemGroup>
+</Project>

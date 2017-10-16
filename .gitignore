@@ -34,3 +34,7 @@ build_*/
 darwin_*/
 src/arm/trampoline.S
 **/texinfo.tex
+vs14/**/Debug/*
+vs14/**/Release/*
+vs14/.vs
+vs14/libffi.*
