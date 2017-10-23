@@ -38,3 +38,7 @@ vs14/**/Debug/*
 vs14/**/Release/*
 vs14/.vs
 vs14/libffi.*
+vs15/**/Debug/*
+vs15/**/Release/*
+vs15/.vs
+vs15/libffi.*
